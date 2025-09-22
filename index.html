@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>About Us - Tourist Stay Hotel</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f0fbff;
+      color: #333;
+      animation: fadeIn 1s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    header {
+      background: linear-gradient(to right, #004d7a, #00796b);
+      padding: 20px;
+      color: white;
+      text-align: center;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffcc80;
+    }
+
+    .about-section {
+      background-color: rgba(74, 68, 68, 0.6);
+      color: white;
+      padding: 120px 20px;
+      text-align: center;
+    }
+
+    .about-section h2 {
+      font-size: 42px;
+      margin-bottom: 10px;
+      color: #ffeb3b;
+    }
+
+    .about-section p {
+      font-size: 20px;
+      font-weight: 300;
+    }
+
+    .about-card {
+      background: white;
+      max-width: 950px;
+      margin: -60px auto 40px;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      animation: fadeIn 1.5s ease;
+    }
+
+    .about-card h2 {
+      margin-bottom: 15px;
+      color: #004d7a;
+      font-size: 28px;
+    }
+
+    .about-card p {
+      line-height: 1.6;
+      font-size: 16px;
+    }
+
+    .features {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .feature {
+      flex: 1 1 250px;
+      background: linear-gradient(135deg, #e0f7fa, #ffffff);
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .feature:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    }
+
+    .feature span {
+      font-size: 36px;
+      display: block;
+      margin-bottom: 12px;
+    }
+
+    .feature strong {
+      display: block;
+      font-size: 18px;
+      margin-bottom: 8px;
+      color: #00796b;
+    }
+
+    footer {
+      background-color: #004d7a;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 60px;
+      font-size: 15px;
+    }
+
+    @media (max-width: 768px) {
+      .about-section h2 {
+        font-size: 30px;
+      }
+
+      .features {
+        flex-direction: column;
+        padding: 0 15px;
+      }
+
+      .about-card {
+        margin: -30px 20px 20px;
+        padding: 25px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>About Our Hotel</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="rooms.html">Rooms</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <div class="about-section">
+    <h2>Welcome to Tourist Stay Hotel</h2>
+    <p>Where comfort meets elegance, right in the heart of the city.</p>
+  </div>
+
+  <div class="about-card">
+    <h2>Our Story</h2>
+    <p>
+      Since 2010, Tourist Stay Hotel has welcomed guests from around the world. Our goal is to deliver unforgettable experiences through warm hospitality, scenic views, and luxurious living. Whether you’re on a family vacation, romantic escape, or business trip — we’ve got you covered!
+    </p>
+
+    <div class="features">
+      <div class="feature">
+        <span>🏞️</span>
+        <strong>Scenic Views</strong>
+        <p>Experience magical sunsets and ocean-side bliss from your window.</p>
+      </div>
+      <div class="feature">
+        <span>🛏️</span>
+        <strong>Luxury Stay</strong>
+        <p>Premium rooms with elegant interiors and modern comfort.</p>
+      </div>
+      <div class="feature">
+        <span>👨‍🍳</span>
+        <strong>24/7 Service</strong>
+        <p>Round-the-clock support to ensure your stay is effortless.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Tourist Stay Hotel. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
+
+
+
+
+

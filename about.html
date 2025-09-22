@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Us - Tourist Stay Hotel</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5faff;
+      color: #333;
+    }
+
+    header {
+      background-color: #004d7a;
+      color: #004d7a;
+      text-align: center;
+      padding: 20px;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    .about-section {
+      background: url('images/hotel-view.jpg') no-repeat center center/cover;
+      color: #004d7a;
+      padding: 100px 20px;
+      text-align: center;
+    }
+
+    .about-section h2 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .about-card {
+      background: rgba(255, 255, 255, 0.95);
+      max-width: 850px;
+      margin: -50px auto 40px;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+
+    .about-card h2 {
+      margin-bottom: 15px;
+      color: #004d7a;
+    }
+
+    .about-card p {
+      line-height: 1.6;
+      font-size: 16px;
+    }
+
+    .features {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
+    .feature {
+      flex: 1 1 200px;
+      margin: 10px;
+      background: #e0f7fa;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .feature:hover {
+      transform: translateY(-5px);
+    }
+
+    .feature span {
+      font-size: 36px;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background-color: #004d7a;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      .features {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .about-card {
+        margin: -30px 20px 20px;
+      }
+
+      .about-section h2 {
+        font-size: 28px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>About Our Hotel</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="rooms.html">Rooms</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <div class="about-section">
+    <h2>Welcome to Tourist Stay Hotel</h2>
+    <p>Where comfort meets elegance, right in the heart of the city.</p>
+  </div>
+
+  <div class="about-card">
+    <h2>Our Story</h2>
+    <p>
+      Established in 2010, Tourist Stay Hotel has become a symbol of comfort, class, and convenience for travelers from all around the globe. We are committed to making your stay unforgettable by offering top-notch hospitality, luxurious rooms, and breathtaking views.
+    </p>
+
+    <div class="features">
+      <div class="feature">
+        <span>🏞️</span>
+        <strong>Scenic Views</strong>
+        <p>Enjoy sunrise & sunset from our premium rooms.</p>
+      </div>
+      <div class="feature">
+        <span>🛏️</span>
+        <strong>Luxurious Rooms</strong>
+        <p>Relax in comfort with plush beds and amenities.</p>
+      </div>
+      <div class="feature">
+        <span>👨‍🍳</span>
+        <strong>24/7 Service</strong>
+        <p>Our staff is always here to assist you with a smile.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Tourist Stay Hotel. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
+
+

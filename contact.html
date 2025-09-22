@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us - Tourist Stay Hotel</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5faff;
+      color: #333;
+    }
+
+    header {
+      background-color: #004d7a;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    .contact-section {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 30px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+
+    .contact-details, .contact-form {
+      flex: 1 1 400px;
+    }
+
+    .contact-details h2,
+    .contact-form h2 {
+      color: #004d7a;
+      margin-bottom: 20px;
+    }
+
+    .contact-details p {
+      margin: 10px 0;
+      font-size: 16px;
+    }
+
+    .contact-details p span {
+      margin-right: 10px;
+      color: #00796b;
+      font-weight: bold;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 15px;
+    }
+
+    .contact-form button {
+      background-color: #00796b;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 25px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .contact-form button:hover {
+      background-color: #004d40;
+    }
+
+    footer {
+      background-color: #004d7a;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      .contact-section {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Contact Us</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="rooms.html">Rooms</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <div class="contact-section">
+    <div class="contact-details">
+      <h2>Hotel Info</h2>
+      <p><span>📧</span>Email: info@touriststayhotel.com</p>
+      <p><span>📞</span>Phone: +91 98765 43210</p>
+      <p><span>📍</span>Address: Main Beach Road, Goa, India</p>
+    </div>
+
+    <div class="contact-form">
+      <h2>Send a Message</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Tourist Stay Hotel. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
+

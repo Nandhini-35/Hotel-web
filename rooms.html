@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Our Rooms - Tourist Stay Hotel</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .room-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 40px 20px;
+    }
+
+    .room-card {
+      background: #ffffff;
+      border-radius: 15px;
+      overflow: hidden;
+      width: 330px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .room-card:hover {
+      transform: translateY(-8px);
+    }
+
+    .room-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .room-info {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .room-info h3 {
+      margin-bottom: 10px;
+      color: #004d7a;
+    }
+
+    .room-info p {
+      font-size: 15px;
+      color: #555;
+    }
+
+    .btn {
+      margin-top: 15px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 25px;
+      background-color: #00796b;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #004d40;
+    }
+
+    
+    #popup, #overlay {
+      display: none;
+    }
+
+    #popup {
+      position: fixed;
+      background: white;
+      padding: 30px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 10;
+      box-shadow: 0 0 30px rgba(0,0,0,0.3);
+      border-radius: 15px;
+      width: 300px;
+    }
+
+    #overlay {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.5);
+      z-index: 5;
+    }
+
+    input {
+      margin: 10px 0;
+      padding: 10px;
+      width: 100%;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .cancel {
+      background-color: #e53935;
+      margin-top: 10px;
+    }
+
+    footer {
+      background-color: #004d7a;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+
+    header {
+      background-color: #004d7a;
+      padding: 20px;
+      text-align: center;
+      color: white;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    @media screen and (max-width: 768px) {
+      .room-grid {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Our Rooms</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="rooms.html">Rooms</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <div class="room-grid">
+    <div class="room-card">
+      <img src="https://www.meliacaribebeach.com/images/slides/slide-36.jpg" alt="Deluxe Room">
+      <div class="room-info">
+        <h3>Deluxe Room</h3>
+        <p>AC, Free WiFi, Ocean View, King-size Bed</p>
+        <button class="btn" onclick="openPopup()">Book Now</button>
+      </div>
+    </div>
+
+    <div class="room-card">
+      <img src="https://cdn.traveltripper.io/site-assets/512_863_12597/media/2018-02-22-041437/large_DDBDB.jpg" alt="Family Suite">
+      <div class="room-info">
+        <h3>Family Suite</h3>
+        <p>2 Beds, Mini Bar, Pool Access, Private Balcony</p>
+        <button class="btn" onclick="openPopup()">Book Now</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="overlay" onclick="closePopup()"></div>
+  <div id="popup">
+    <h3>Booking Form</h3>
+    <form>
+      <input type="text" placeholder="Your Name" required><br>
+      <input type="email" placeholder="Email" required><br>
+      <input type="date" required><br>
+      <button type="submit" class="btn">Confirm Booking</button>
+    </form>
+    <button onclick="closePopup()" class="btn cancel">Close</button>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Tourist Stay Hotel. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function openPopup() {
+      document.getElementById("popup").style.display = "block";
+      document.getElementById("overlay").style.display = "block";
+    }
+
+    function closePopup() {
+      document.getElementById("popup").style.display = "none";
+      document.getElementById("overlay").style.display = "none";
+    }
+  </script>
+</body>
+</html>
+
+
+
